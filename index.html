@@ -1,1 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blast Efficiency Dashboard</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar / Header -->
+  <header class="navbar" role="navigation">
+    <div class="brand-title" aria-label="Blast Efficiency Dashboard">
+      <h1>Blast Efficiency Dashboard</h1>
+    </div>
+    <!-- Navigation items -->
+    <nav>
+      <ul>
+        <li><a href="#videos">All Blasts</a></li>
+        <li><a href="#filters">Filters</a></li>
+        <li><a href="#chartSection">Chart</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section: Filter & Sort -->
+    <section id="filters" class="filters-section">
+      <h2>Filter &amp; Sort</h2>
+      <div class="filters-container">
+        <!-- Search by Blast ID or Designer -->
+        <div class="filter-item">
+          <label for="searchInput" class="filter-label">Search</label>
+          <input
+            type="text"
+            id="searchInput"
+            class="filter-input"
+            placeholder="Search by Blast ID or Designer..."
+            aria-label="Search blasts"
+          />
+        </div>
+        <!-- Sort by Score -->
+        <div class="filter-item">
+          <label for="sortSelect" class="filter-label">Sort by</label>
+          <select id="sortSelect" class="filter-input" aria-label="Sort blasts">
+            <option value="none">None</option>
+            <option value="scoreAsc">Score (Ascending)</option>
+            <option value="scoreDesc">Score (Descending)</option>
+            <option value="dateAsc">Date (Ascending)</option>
+            <option value="dateDesc">Date (Descending)</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Chart (Example) -->
+    <section id="chartSection" class="section-chart">
+      <h2>Blast Score Distribution</h2>
+      <canvas id="blastChart" aria-label="Chart representing blast scores" role="img"></canvas>
+    </section>
+
+    <!-- Videos / Dashboard Section -->
+    <section id="videos" class="section-videos">
+      <h2>All Blasts</h2>
+      <div class="video-cards-container" id="videoCardsContainer" aria-live="polite">
+        <!-- Populated by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer" role="contentinfo">
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Chart.js (for the example chart) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Main App Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
