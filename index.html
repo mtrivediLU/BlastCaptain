@@ -16,10 +16,9 @@
     <!-- Navigation items -->
     <nav>
       <ul>
-        <li><a href="#videos">All Blasts</a></li>
-        <li><a href="#filters">Filters</a></li>
-        <li><a href="#chartSection">Chart</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="judgingCriteria.html">Judging Criteria</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
     </nav>
   </header>
@@ -54,11 +53,13 @@
         </div>
       </div>
     </section>
-
-    <!-- Section: Chart (Example) -->
-    <section id="chartSection" class="section-chart">
-      <h2>Blast Score Distribution</h2>
-      <canvas id="blastChart" aria-label="Chart representing blast scores" role="img"></canvas>
+    
+    <!-- New Section: Judging Criteria -->
+    <section id="judgingCriteria" class="judging-criteria-section">
+      <h2>Confidence Meter</h2>
+      <div class="confidence-meter">
+        <canvas id="confidenceChart" aria-label="Confidence Meter radar chart" role="img"></canvas>
+      </div>
     </section>
 
     <!-- Videos / Dashboard Section -->
@@ -76,7 +77,7 @@
   </footer>
 
   <!-- Scripts -->
-  <!-- Chart.js (for the example chart) -->
+  <!-- Chart.js (for the example chart and Confidence Meter) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!-- Main App Logic -->
   <script src="script.js"></script>
