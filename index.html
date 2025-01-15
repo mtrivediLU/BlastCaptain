@@ -1,1 +1,85 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blast Efficiency Dashboard</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar / Header -->
+  <header class="navbar" role="navigation">
+    <div class="brand-title" aria-label="Blast Efficiency Dashboard">
+      <h1>Blast Efficiency Dashboard</h1>
+    </div>
+    <!-- Navigation items -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="approach.html">Our Approach</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section: Filter & Sort -->
+    <section id="filters" class="filters-section">
+      <h2>Filter &amp; Sort</h2>
+      <div class="filters-container">
+        <!-- Search by Blast ID or Designer -->
+        <div class="filter-item">
+          <label for="searchInput" class="filter-label">Search</label>
+          <input
+            type="text"
+            id="searchInput"
+            class="filter-input"
+            placeholder="Search by Blast ID or Designer..."
+            aria-label="Search blasts"
+          />
+        </div>
+        <!-- Sort by Score -->
+        <div class="filter-item">
+          <label for="sortSelect" class="filter-label">Sort by</label>
+          <select id="sortSelect" class="filter-input" aria-label="Sort blasts">
+            <option value="none">None</option>
+            <option value="scoreAsc">Score (Ascending)</option>
+            <option value="scoreDesc">Score (Descending)</option>
+            <option value="dateAsc">Date (Ascending)</option>
+            <option value="dateDesc">Date (Descending)</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    
+    <!-- New Section: Judging Criteria -->
+    <section id="judgingCriteria" class="judging-criteria-section">
+      <h2>Confidence Meter</h2>
+      <div class="confidence-meter">
+        <canvas id="confidenceChart" aria-label="Confidence Meter radar chart" role="img"></canvas>
+      </div>
+    </section>
+
+    <!-- Videos / Dashboard Section -->
+    <section id="videos" class="section-videos">
+      <h2>All Blasts</h2>
+      <div class="video-cards-container" id="videoCardsContainer" aria-live="polite">
+        <!-- Populated by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer" role="contentinfo">
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Chart.js (for the example chart and Confidence Meter) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Main App Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
