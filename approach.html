@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Approach - Blast Efficiency Dashboard</title>
+  <!-- External CSS (Optional: Link to your main style.css for consistency) -->
+  <style>
+    /* ---------------------------------------------------
+       GLOBAL STYLES
+    ---------------------------------------------------- */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ---------------------------------------------------
+       NAVBAR
+    ---------------------------------------------------- */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #242526;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .brand-title h1 {
+      font-size: 1.5rem;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* ---------------------------------------------------
+       MAIN CONTENT
+    ---------------------------------------------------- */
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+    }
+
+    main h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    /* ---------------------------------------------------
+       SECTIONS
+    ---------------------------------------------------- */
+    .approach-section {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .approach-section:nth-child(even) {
+      background-color: #f9fbfd;
+    }
+
+    .approach-section h3 {
+      font-size: 1.8rem;
+      color: #007bff;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+    }
+
+    .approach-section h4 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .approach-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    /* ---------------------------------------------------
+       FOOTER
+    ---------------------------------------------------- */
+    .footer {
+      background-color: #242526;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+    }
+
+    /* ---------------------------------------------------
+       RESPONSIVE DESIGN
+    ---------------------------------------------------- */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar ul li {
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .approach-section {
+        padding: 1.5rem;
+      }
+
+      .approach-section h3 {
+        font-size: 1.5rem;
+      }
+
+      .approach-section h4 {
+        font-size: 1.1rem;
+      }
+
+      .approach-section p {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand-title h1 {
+        font-size: 1.2rem;
+      }
+
+      main h2 {
+        font-size: 2rem;
+      }
+
+      .approach-section h3 {
+        font-size: 1.3rem;
+      }
+
+      .approach-section h4 {
+        font-size: 1rem;
+      }
+
+      .approach-section p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar / Header -->
+  <header class="navbar" role="navigation">
+    <div class="brand-title" aria-label="Blast Efficiency Dashboard">
+      <h1>Blast Efficiency Dashboard</h1>
+    </div>
+    <!-- Navigation items -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="approach.html">Our Approach</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Our Approach</h2>
+
+    <!-- Section 1: Innovation & Creativity -->
+    <section class="approach-section">
+      <h3>Innovation &amp; Creativity</h3>
+      <div class="approach-content">
+        <h4>What We Did:</h4>
+        <p>
+          <strong>ChatGPT/Generative AI:</strong> We integrated ChatGPT to provide intelligent, conversational analysis of blast data, enabling quick Q&A on blast metrics and summarizing key findings in plain language.
+        </p>
+        <p>
+          <strong>Python Scripts:</strong> Python was utilized for data parsing, transformations, and to generate advanced analytics on fragmentation quality, muck pile formation, and other blast parameters.
+        </p>
+
+        <h4>What We Could Do Next:</h4>
+        <p>
+          <strong>LangChain:</strong> By chaining AI models and context modules, we could unify multiple tasks (e.g., retrieving data from logs, summarizing entire patterns, forecasting potential hazards) into a seamless workflow.
+        </p>
+        <p>
+          <strong>Microsoft Power Automate &amp; Power Automate Desktop Flow:</strong> Automating data ingestion, notifications, or even on-prem tasks via desktop automation scripts (e.g., automatically generating blasts reports, emailing relevant stakeholders) would reduce manual overhead.
+        </p>
+        <p>
+          <strong>ELT Model for a Centralized Data Warehouse:</strong> Migrating or structuring raw blasting data into a scalable warehouse first, then applying transformations “at rest,” gives more agility in how the data is processed and consumed across the entire solution.
+        </p>
+
+        <h4>Why It’s Innovative:</h4>
+        <p>
+          By blending AI-driven insights (ChatGPT) with robust Python-based analytics and the potential for next-level orchestration (LangChain, Power Automate, ELT), the solution rethinks how blasting operations are monitored, optimized, and reported—offering a uniquely creative, data-centric approach.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 2: Technical Feasibility -->
+    <section class="approach-section">
+      <h3>Technical Feasibility</h3>
+      <div class="approach-content">
+        <h4>What We Did:</h4>
+        <p>
+          <strong>Python Scripts for ELT:</strong> We already move and transform data with Python-based scripts, ensuring raw logs, metrics, and other inputs get cleaned, normalized, and ready for analysis.
+        </p>
+
+        <h4>What We Could Do Next:</h4>
+        <p>
+          <strong>Cloud Deployment (Azure or AWS):</strong> Automate these Python processes in the cloud and connect them to a centralized database, ensuring real-time or scheduled data flows for continuous analysis.
+        </p>
+        <p>
+          <strong>UI Integration:</strong> The resulting data pipeline feeds directly into the user interface that showcases videos, charts, and analytics—making the entire solution user-friendly for site engineers and managers.
+        </p>
+        <p>
+          <strong>Contextual Knowledge Customization:</strong> If further accepted, we can embed domain-specific knowledge (like advanced fragmentation models or blast physics) to refine the logic and deliver even more accurate insights.
+        </p>
+
+        <h4>Why It’s Feasible:</h4>
+        <p>
+          All Python scripts, cloud services, and database integrations are standard enterprise-ready technologies. The system’s design—pipeline + database + UI—ensures minimal friction to deploy and maintain in real mining environments.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Impact & Relevance -->
+    <section class="approach-section">
+      <h3>Impact &amp; Relevance</h3>
+      <div class="approach-content">
+        <h4>What We Did:</h4>
+        <p>
+          Provided blasting data analysis (fragmentation, dust, MuckPile scores, etc.) in a single, user-friendly dashboard accessible to technical and non-technical stakeholders.
+        </p>
+
+        <h4>What We Could Do Next:</h4>
+        <p>
+          <strong>Automated Alerts &amp; Workflows:</strong> If “Environmental_Score” is low or “Fragmentation_Score” is below a threshold, Power Automate could trigger real-time alerts to supervisors or schedule further inspections.
+        </p>
+        <p>
+          <strong>Customizable Logic:</strong> Incorporating contextual knowledge from domain experts would further refine analyses—e.g., specialized rules for different rock types, weather conditions, or advanced safety thresholds.
+        </p>
+
+        <h4>Why It’s Impactful:</h4>
+        <p>
+          Providing detailed, centralized blast insights not only boosts safety and efficiency but accelerates decision-making. By allowing further customization (automations, domain logic), the solution remains highly relevant to ongoing open-pit mining challenges.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 4: Scalability & Sustainability -->
+    <section class="approach-section">
+      <h3>Scalability &amp; Sustainability</h3>
+      <div class="approach-content">
+        <h4>What We Did:</h4>
+        <p>
+          Designed a modular approach: Python scripts are easily deployed on different infrastructures, and the UI can scale horizontally if more users or blasts are added.
+        </p>
+
+        <h4>What We Could Do Next:</h4>
+        <p>
+          <strong>Centralized Data Warehouse:</strong> Transitioning to an ELT paradigm in Azure or AWS ensures more robust growth. As data volumes rise, we can scale storage and compute without re-architecting.
+        </p>
+        <p>
+          <strong>Long-Term Maintainability:</strong> Leveraging widely supported services (Microsoft Power Automate, mainstream clouds, Python’s ecosystem) ensures the solution remains cost-effective and future-proof.
+        </p>
+
+        <h4>Why It’s Sustainable:</h4>
+        <p>
+          All components are enterprise-friendly and can be iteratively extended to cover more mines, new blast patterns, or additional operational data. This modular design and standard tooling guarantee a long lifecycle and wide adoption potential for the solution.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer" role="contentinfo">
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
