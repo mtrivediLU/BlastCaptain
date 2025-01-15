@@ -70,6 +70,32 @@
     }
 
     /* ---------------------------------------------------
+       DOWNLOAD BUTTON
+    ---------------------------------------------------- */
+    .download-button-container {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .download-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-button:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    /* ---------------------------------------------------
        SECTIONS
     ---------------------------------------------------- */
     .approach-section {
@@ -157,6 +183,11 @@
       .approach-section p {
         font-size: 0.95rem;
       }
+
+      .download-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
     }
 
     @media (max-width: 480px) {
@@ -179,6 +210,12 @@
       .approach-section p {
         font-size: 0.9rem;
       }
+
+      .download-button {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -200,6 +237,11 @@
 
   <!-- Main Content -->
   <main>
+    <!-- Download Button -->
+    <div class="download-button-container">
+      <a href="https://drive.google.com/drive/folders/1YKIns9Vi42C0baAORLBhGpbAY7Ln7ogL?usp=sharing" target="_blank" class="download-button">Access Source Code &amp; Data</a>
+    </div>
+
     <h2>Our Approach</h2>
 
     <!-- Section 1: Innovation & Creativity -->
